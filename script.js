@@ -4,6 +4,7 @@ const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 const reviewCards = document.querySelectorAll('.review-card');
 const heroMedia = document.querySelector('.hero-media');
+const heroImage = document.querySelector('.hero-product-image');
 const variantSearch = document.getElementById('variantSearch');
 const variantCards = document.querySelectorAll('#warianty .variant-card');
 const ageGate = document.getElementById('ageGate');
@@ -113,6 +114,25 @@ if (heroMedia) {
     const y = (event.clientY / window.innerHeight - 0.5) * -6;
     heroMedia.style.transform = `translate(${x}px, ${y}px)`;
   });
+}
+
+if (heroImage) {
+  const heroVariants = [
+    {
+      src: 'images/merrymi-olejki-30ml-lush-ice.png',
+      alt: 'MERRYMI Salts 30ml Lush Ice - olejek do e papierosa',
+    },
+    {
+      src: 'images/merrymi-olejki-30ml-miami-mint.png',
+      alt: 'MERRYMI Salts 30ml Miami Mint - olejek do e papierosa',
+    },
+  ];
+  let heroIndex = 0;
+  setInterval(() => {
+    heroIndex = (heroIndex + 1) % heroVariants.length;
+    heroImage.src = heroVariants[heroIndex].src;
+    heroImage.alt = heroVariants[heroIndex].alt;
+  }, 3000);
 }
 
 if (variantSearch && variantCards.length) {
