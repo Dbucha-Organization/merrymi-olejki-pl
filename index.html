@@ -28,33 +28,550 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://merrymi-olejki.pl/images/merrymi-olejki-30ml-miami-mint.png" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- TODO: Add price, currency, stock status, phone, email and social profiles only after they are verified on-site. -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "MerryMi Liquidy 30ml",
-        "description": "Olejki do e papierosa, liquidy i olejek do e papierosa MerryMi Liquidy 30ml. Produkt typu sól nikotynowa i sole nikotynowe dla użytkowników vape.",
-        "brand": {
-          "@type": "Brand",
-          "name": "MERRYMI"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "OnlineStore",
+          "@id": "https://merrymi-olejki.pl/#organization",
+          "name": "MERRYMI",
+          "url": "https://merrymi-olejki.pl/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://merrymi-olejki.pl/logo.png"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "PL"
+          },
+          "availableLanguage": "pl-PL"
         },
-        "category": "sól nikotynowa",
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Mateusz"
-            },
-            "reviewBody": "Intensywny smak i wygodna butelka 30 ml."
+        {
+          "@type": "WebSite",
+          "@id": "https://merrymi-olejki.pl/#website",
+          "name": "merrymi-olejki.pl",
+          "url": "https://merrymi-olejki.pl/",
+          "inLanguage": "pl-PL",
+          "publisher": {
+            "@id": "https://merrymi-olejki.pl/#organization"
           }
-        ]
-      }
-    </script>
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://merrymi-olejki.pl/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://merrymi-olejki.pl/"
+            }
+          ]
+        },
+        {
+          "@type": "Product",
+          "@id": "https://merrymi-olejki.pl/#product",
+          "name": "MerryMi Liquidy 30ml",
+          "description": "MerryMi Liquidy 30ml to linia wariantów smakowych olejków do e papierosa i liquidów z solą nikotynową dla pełnoletnich użytkowników vape.",
+          "image": [
+            "https://merrymi-olejki.pl/images/merrymi-olejki-30ml-miami-mint.png",
+            "https://merrymi-olejki.pl/images/merrymi-olejki-30ml-lush-ice.png",
+            "https://merrymi-olejki.pl/images/merrymi-olejki-30ml.jpg"
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "MERRYMI"
+          },
+          "category": [
+            "olejki do e papierosa",
+            "liquidy do e papierosa",
+            "sole nikotynowe"
+          ],
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 21
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe",
+            "itemCondition": "https://schema.org/NewCondition",
+            "seller": {
+              "@id": "https://merrymi-olejki.pl/#organization"
+            }
+          }
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://merrymi-olejki.pl/#collection",
+          "name": "Olejki do e papierosa - MerryMi Liquidy 30ml",
+          "url": "https://merrymi-olejki.pl/#warianty",
+          "isPartOf": {
+            "@id": "https://merrymi-olejki.pl/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://merrymi-olejki.pl/#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://merrymi-olejki.pl/#itemlist"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://merrymi-olejki.pl/#itemlist",
+          "name": "Warianty MerryMi Liquidy 30ml",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Aloe Blackcurrant",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Aloe-Blackcurrant.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Breezy Lemon Berry",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Breezy-Lemon-Berry.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Crazy Blueberry",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Crazy-Blueberry.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Desert Candy",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Desert-Candy.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Dragon Fruit Ice",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Dragon-Fruit-Ice.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Fanta",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Fanta.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Fizzy Cherry",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Fizzy-Cherry.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Forest Berries",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Forest-Berries.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Frozen Grape",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Frozen-Grape.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Grape Berry",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Grape-Berry.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Grapefruit Refresher",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Grapefruit-Refresher.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Green Apple",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Green-Apple.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Iced Peach Melon",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Iced-Peach-Melon.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Jager Red Energy",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Jager-Red-Energy.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Kiwi Passion Fruit Guava",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Kiwi-Passion-Fruit-Guava.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 16,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Lemon Mojito",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Lemon-Mojito.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 17,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Lush Ice",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Lush-Ice.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 18,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Miami Mint",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Miami-Mint.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 19,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Mixed Berries",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Mixed-Berries.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 20,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Orange Dragon",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Orange-Dragon.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 21,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Peach Lemonade",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Peach-lemonade.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 22,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Prime Strawberry",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Prime-Strawberry.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 23,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Red Energy Ice",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Red-Energy-Ice.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 24,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Strawberry Raspberry Cherry Ice",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Strawberry-Raspberry-Cherry-Ice.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 25,
+              "item": {
+                "@type": "Product",
+                "name": "Olejek do e papierosa Tropical Citrus Fizz",
+                "image": "https://merrymi-olejki.pl/images/merrymi-olejki-liquidy-Tropical-Citrus-Fizz.jpg",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://merrymi-olejki.pl/#faq-schema",
+          "inLanguage": "pl-PL",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czym jest sól nikotynowa w MerryMi Liquidy 30ml Olejki do e papierosa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To forma nikotyny o szybszym odczuciu satysfakcji i łagodniejszym charakterze przy użyciu olejki do e papierosa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Dla kogo są te olejki do e papierosa i liquidy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dla osób, które używają vape i szukają wygodnego rozwiązania typu olejki do e papierosa i liquidy MerryMi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Gdzie kupić oryginalny produkt MerryMi Liquidy 30ml Olejki do e papierosa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Na oficjalnej stronie: MerryMi Liquidy 30ml Olejki do e papierosa"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jakie zapachy są dostępne w MerryMi Liquidy 30ml?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oferujemy 25 różnych smaków olejki do e papierosa, od owocowych i miętowych po energetyczne i deserowe. Każdy wariant MerryMi Liquidy 30ml jest starannie dobierany dla miłośników vape."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak długo trwa butelka 30ml olejki do e papierosa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Czas użytkowania zależy od częstości i intensywności vape. Standardowo butelka MerryMi Liquidy 30ml wystarczająco na kilka dni do tygodnia intensywnego użytkowania."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy olejki do e papierosa MerryMi Liquidy pasują do wszystkich urządzeń?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MerryMi Liquidy 30ml jest kompatybilne z większością urządzeń do vape. Rekomendujemy używanie ich w urządzeniach przeznaczonych dla liqu solo nikotynowych dla optymalnego doświadczenia."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaka jest zawartość nikotyny w MerryMi Liquidy 30ml?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Olejki do e papierosa MerryMi Liquidy zawierają sole nikotynowe o różnych stężeniach (zazwyczaj 10mg, 20mg). Zawartość nikotyny podana jest na opakowaniu każdego produktu."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak przechowywać olejki do e papierosa MerryMi Liquidy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Przechowuj MerryMi Liquidy 30ml w chłodnym, ciemnym miejscu, z dala od bezpośredniego światła słonecznego. Idealna temperatura to 15-25°C. Proper przechowywanie olejki do e papierosa przedłuża ich żywotność."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy produkty MerryMi Liquidy są legalne w Polsce?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, MerryMi Liquidy 30ml i wszystkie olejki do e papierosa z naszej oferty są legalne i zgodne z polskim prawem. Produkt jest dostępny dla osób pełnoletnich."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Co wyróżnia MerryMi Liquidy od innych marek?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MerryMi Liquidy 30ml wyróżnia się wysoką jakością olejki do e papierosa, intensywnym smakiem, szybkim działaniem soli nikotynowej i bogatą paletą 25 unikalnych smaków dla każdego użytkownika vape."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy olejki do e papierosa MerryMi Liquidy zawierają propylene glycol?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MerryMi Liquidy 30ml zawiera propylene glycol (PG) i vegetable glycerin (VG) w odpowiedniej proporcji dla optymalnego doświadczenia vape z solami nikotynowymi."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -82,12 +599,12 @@
     </div>
   </div>
 
-    <div class="nicotine-banner" role="status">
-      <p><strong>Informacja:</strong> Produkt zawiera nikotynę i jest przeznaczony wyłącznie dla osób pełnoletnich.</p>
-    </div>
+  <div class="nicotine-banner" role="status">
+    <p><strong>Informacja:</strong> Produkt zawiera nikotynę i jest przeznaczony wyłącznie dla osób pełnoletnich.</p>
+  </div>
 
-    <header class="site-header" id="top">
-      <nav class="navbar" aria-label="Główna nawigacja">
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Główna nawigacja">
       <a class="brand" href="https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe" rel="follow"
         aria-label="MERRYMI">
         <img src="logo.png" alt="MERRYMI logo" class="brand-logo" loading="eager" decoding="async" />
@@ -108,8 +625,8 @@
           Kup Hurt
         </a>
       </ul>
-      </nav>
-    </header>
+    </nav>
+  </header>
 
   <main>
     <section class="hero reveal">
