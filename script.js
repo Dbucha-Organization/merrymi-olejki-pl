@@ -18,6 +18,7 @@ const spinBtn = document.getElementById('spinBtn');
 const discountWheel = document.getElementById('discountWheel');
 const wheelResult = document.getElementById('wheelResult');
 const DISCOUNT_VALUES = [10, 15, 20, 25, 30];
+const WHEEL_COLORS = ['#00f5d4', '#fee440', '#00bbf9', '#9b5de5', '#ff006e'];
 const WHEEL_SEGMENTS = DISCOUNT_VALUES.length;
 const SEGMENT_DEG = 360 / WHEEL_SEGMENTS;
 let hasSpunDiscountWheel = false;
@@ -225,7 +226,19 @@ const closeWheel = () => {
 
 const getRandomIndex = () => Math.floor(Math.random() * WHEEL_SEGMENTS);
 
+const buildWheelGradient = () => {
+  const segments = DISCOUNT_VALUES.map((_, idx) => {
+    const start = idx * SEGMENT_DEG;
+    const end = start + SEGMENT_DEG;
+    const color = WHEEL_COLORS[idx % WHEEL_COLORS.length];
+    return `${color} ${start}deg ${end}deg`;
+  });
+
+  return `conic-gradient(${segments.join(', ')})`;
+};
+
 if (wheelOpenBtn && wheelModal && wheelCloseBtn && spinBtn && discountWheel && wheelResult) {
+  discountWheel.style.background = buildWheelGradient();
   discountWheel.innerHTML = DISCOUNT_VALUES.map(
     (value, idx) =>
       `<span class="wheel-label" style="--a:${idx * SEGMENT_DEG + SEGMENT_DEG / 2}deg">${value}%</span>`

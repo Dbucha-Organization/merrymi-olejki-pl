@@ -1079,15 +1079,11 @@ summary {
   border: 7px solid #090909;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45), 0 0 24px rgba(255, 0, 140, 0.22);
   background: conic-gradient(
-    #00f5d4 0deg 40deg,
-    #f15bb5 40deg 80deg,
-    #fee440 80deg 120deg,
-    #00bbf9 120deg 160deg,
-    #9b5de5 160deg 200deg,
-    #fb5607 200deg 240deg,
-    #3a86ff 240deg 280deg,
-    #ff006e 280deg 320deg,
-    #8338ec 320deg 360deg
+    #00f5d4 0deg 72deg,
+    #fee440 72deg 144deg,
+    #00bbf9 144deg 216deg,
+    #9b5de5 216deg 288deg,
+    #ff006e 288deg 360deg
   );
   transition: transform 4s cubic-bezier(0.2, 0.95, 0.3, 1);
 }
